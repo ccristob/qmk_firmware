@@ -41,7 +41,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_B_RIGHT { D4 }
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 5
+#define DEBOUNCE_TYPE = sym_eager_pk
+#define DEBOUNCE 16
+
 
 #define BACKLIGHT_PIN B5
 #define CAPS_LOCK_LED_PIN B6
@@ -65,3 +67,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Set right column, left macro, 1.75u shift, split spaces, and 5x1u on by default
 #define VIA_EEPROM_LAYOUT_OPTIONS_DEFAULT 0x00DE
 #define VIA_EEPROM_LAYOUT_OPTIONS_SIZE 2
+
+// additional things
+
+#define USB_POLLING_INTERVAL_MS 1
+#define FORCE_NKRO
+#define QMK_KEYS_PER_SCAN 12
+#define PREVENT_STUCK_MODIFIERS
